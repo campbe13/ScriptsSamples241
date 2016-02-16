@@ -1,28 +1,17 @@
 #!/bin/bash
-# ifelifsample.sh
+# ifelifsample2.sh
+# PMC
+# 2016-02-16
+#
 # A simple script that turns a score into a grade
-
-name=$(basename $0) 
-
-if test $# -ne 1; then
-echo "Usage: $name score"
-exit 1
-
-elif [ $1 -lt 0 ]; then
-echo "The score must be in the range 0-100"
-exit 2
-
-elif [ $1 -gt 100 ]; then
-echo "The score must be in the range 0-100"
-exit 3
-fi
-
-score=$1
-
-if [ $score -ge  60 ]; then
-grade='pass'
-else 
-grade='fail'
-fi
-
-echo "The grade is $grade"
+if [[ $# -le 0 ]] 
+then 
+   echo "no cli args"
+elif [[ $# -eq 1 ]] ; then
+   echo "1 cli arg"
+elif [[ $# -eq 4 ]] || [[ $# -eq 5 ]]
+then
+   echo "4 or 5 cli arg"
+else
+	echo $# number of cli args
+fi 
