@@ -17,4 +17,7 @@ echo $#  '$#' count of args
 echo $*  '$*' all cli args 
 echo $@  '$@' all cli args 
 
+echo $!  '$!' PID of the last background process
+echo $?  '$?' status of last command which is an echo
+
 echo "hello world"

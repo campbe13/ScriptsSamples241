@@ -2,7 +2,7 @@
 # PMCampbell
 # February 14, 2013
 # 
-# sample script use command line arguments 
+# sample script use 1st command line arguments
 
 #  see if userid exists
 grep $1 /etc/passwd
