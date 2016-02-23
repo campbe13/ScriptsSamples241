@@ -1,32 +1,33 @@
 #!/bin/bash
-# funcsample.sh
 # A script using functions
 name=`basename $0`
-Usage="Usage:$name parameters"
+Usage=“Usage: $name parameter”
 # a function
 
 isint()
 {
-case "$1" in
-    [-+]) return 1;;
+case “$1” in
+[-+])		  return 1;;
 [-+]*[^0-9]*) return 1;;
-      [-+]*) return 0;;
-   *[^0-9]*) return 1;;
-      *) return 0;;
+[-+]*) 		  return 0;;
+*[^0-9]*) 	  return 1;;
+      *)      return 0;;
 esac
 }
+
 fhelp()
 {
-cat<<EOT
-$Usage
-This script is an example....
+  cat<<EOT
+  $Usage
+  This script is an example….
 EOT
-exit 1
 }
-if [  $# != 1 ]; then  fhelp 
+
+if [  $# != 1 ]; then  
+   fhelp 
+elif isint $1; then
+   echo ‘… Yep, its an integer’
+  else
+  echo ‘…nope, not an integer’
 fi
-if isint $1; then
-echo ï¿½... Yep, it was an integerï¿½
-else
-echo ï¿½...nope, not an integerï¿½
-fi
+
