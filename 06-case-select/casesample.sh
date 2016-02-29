@@ -7,7 +7,10 @@
 read -p "Enter something> "  var
 case $var in
 	[0-9]) msg="a number";;
-	a | A) msg=""the letter a"
+        d | D ) echo today $(date +%F) 
+		echo Hellow $(whoami) ; echo "goodbye"
+                ;;
+	a | A) msg="the letter a" ;;
 	[b-z]) msg="a lower case letter";;
 	boo) msg="the word boo";;
 	15) msg="the number 15";;
