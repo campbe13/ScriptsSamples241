@@ -15,6 +15,6 @@ unix type server could be used
 * copy files from sonic to local computer 
  https://asciinema.org/a/85pggue66skmawlh5bh1k4mbf
 
-### Using filezilla (which uses scp (secure copy) to copy files between computers
-Note in this example it is important to put sftp://_hostname_
+### Using filezilla (which uses scp (secure copy)) to copy files between computers
+Note in this example it is important to put *sftp://*_hostname_
 * http://sonic.dawsoncollege.qc.ca/~pcampbell/ccal-howtos/sftptosonic.html
