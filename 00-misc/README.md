@@ -5,6 +5,7 @@ short url: http:/bit.ly/bash241
 P.M.Campbell
 ### Using tar  and compression
 * https://asciinema.org/a/57xovgg7gd9gqrtjasag8qh9x
+* http://www.thegeekstuff.com/2010/04/unix-tar-command-examples/
 
 ### Usinc scp (secure copy) to copy files between computers
 The examples here are to & from sonic but any remote 
