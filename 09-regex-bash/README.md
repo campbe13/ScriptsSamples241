@@ -1,4 +1,4 @@
-#Regex
+#Regex in bash scripting
 
 Some helpful references
 * my quick ref http://bit.ly/regex2014
