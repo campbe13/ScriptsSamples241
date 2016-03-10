@@ -19,7 +19,7 @@ fi
 
 score=$1
 
-if [ $score -ge  60 ]; then
+if [[ $score -ge  60 ]]; then
 grade='pass'
 else 
 grade='fail'

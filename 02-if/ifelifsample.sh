@@ -4,6 +4,7 @@
 # 2016-02-16
 #
 # A simple script that turns a score into a grade
+#
 if [[ $# -le 0 ]] 
 then 
    echo "no cli args"

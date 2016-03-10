@@ -5,7 +5,7 @@
 
 var=6
 
-if [ $var == "5" ]
+if [[ $var == "5" ]]
 then
 
    echo \$var is 5
