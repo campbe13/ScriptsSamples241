@@ -1,0 +1,4 @@
+# change all occurrences of This to That
+# anywhere on the line
+# without the g it will only match the first
+s/This/That/g

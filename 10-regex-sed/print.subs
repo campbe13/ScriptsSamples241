@@ -1,0 +1,4 @@
+# print all lines containing string line
+# substitute is for IS anywhere on the line
+/line/ p
+s/is/IS/g

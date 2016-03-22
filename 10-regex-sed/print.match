@@ -1,0 +1,6 @@
+# print all lines that contain the string line
+# or contain the string this
+# if the -n option is used, it will print only matching
+# if the -n option is used the match lines will appear twice
+/line/ p
+/this/ p

@@ -1,0 +1,2 @@
+# after every match on the regex insert a line with the text APPEND THIS
+/line/ a APPEND THIS

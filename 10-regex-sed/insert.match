@@ -1,0 +1,3 @@
+# match on every line that contains the regex This insert 
+# the string before those lines
+/This/ i BEFORE

@@ -1,0 +1,2 @@
+# after lines 2, 3, 4, 5 append the string
+2,5 a APPEND THIS

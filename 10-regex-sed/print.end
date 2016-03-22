@@ -1,0 +1,3 @@
+# print all lines that end in nologon
+# regex anchor at end
+/nologin$/ p

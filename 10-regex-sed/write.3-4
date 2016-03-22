@@ -1,0 +1,3 @@
+# lines 3 and 4 of the file are written into 
+# the file new.3-4
+3,4 w new.3-4

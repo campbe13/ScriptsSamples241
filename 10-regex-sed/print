@@ -1,0 +1,6 @@
+# if used as follows will show matched lines twice
+# sed /line/ p lines
+# if used as follows will show ONLY matched lines
+# sed -n /line/ p lines
+# lines is a file in this directory
+/line/ p
