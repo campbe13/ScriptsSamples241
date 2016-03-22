@@ -7,8 +7,8 @@
 * http://www.tldp.org/LDP/abs/html/x23170.html
 
 The files in this directory are for a gentle introduction to sed
-lines  - data for use with the sed files
-sedrun.sh  - script to run sed files against line
+* lines  - data for use with the sed files
+* sedrun.sh  - script to run sed files against line
 
 ##To use the script sedrun.sh:
 
