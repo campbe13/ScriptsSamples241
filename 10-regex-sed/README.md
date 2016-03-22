@@ -5,6 +5,7 @@
 * http://tldp.org/LDP/Bash-Beginners-Guide/html/chap_05.html
 * http://www.maketecheasier.com/beginners-guide-to-sed-linux/
 * http://www.tldp.org/LDP/abs/html/x23170.html
+
 ## awk 
 This is here for completeness as we often use sed with awk, but it is not covered in this course
 *Tutorial http://www.grymoire.com/Unix/Awk.html
