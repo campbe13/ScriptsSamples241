@@ -6,6 +6,9 @@
 * http://www.maketecheasier.com/beginners-guide-to-sed-linux/
 * http://www.tldp.org/LDP/abs/html/x23170.html
 
+# asciinema videos for sed
+* http://asciinema.org/a/bzywjtnmq8txj72987rf2o21e
+
 The files in this directory are for a gentle introduction to sed
 * lines  - data for use with the sed files
 * sedrun.sh  - script to run sed files against line
