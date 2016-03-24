@@ -61,3 +61,42 @@
    61  vi 10-regex-sed/README.md 
    62  ./gitIt.sh sed intro
    63  exit
+    1  cd sed
+    2  ls
+    3  cd git241/
+    4  ls
+    5  cd 10-regex-sed/
+    6  ls
+    7  cd ..
+    8  tar -czf fun-with-sed.tgz 10-regex-sed/
+    9  mv fun-with-sed.tgz ~/public_html/permanent/
+   10  cd z ~/public_html/permanent/
+   11  cd  ~/public_html/permanent/
+   12  ls
+   13  cd ..
+   14  ls
+   15  ls expressionless/
+   16  cd 
+   17  cd git241/
+   18  ls
+   19  cd 10-regex-sed/
+   20  ls
+   21  vi README.md 
+   22  vi sedrun.sh 
+   23  ls -la
+   24  chmod o+rw *
+   25  ls
+   26  ls -la
+   27  chmod o-rw *
+   28  chmod u+rw *
+   29  ls
+   30  cat sedrun.sh 
+   31  vi sedrun.sh 
+   32  ./sedrun.sh subs 
+   33  vi sedrun.sh 
+   34  ./sedrun.sh subs.eE
+   35  ls
+   36  cd ..
+   37  ./gitIt.sh 
+   38  ./gitIt.sh sed intro
+   39  exit
