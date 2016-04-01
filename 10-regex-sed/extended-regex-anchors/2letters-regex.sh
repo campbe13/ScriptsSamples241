@@ -1,6 +1,10 @@
+#!/bin/bash
+# pmc
+# March 2016
+# use anchors with regex in bash scripting
 func ()
 {
-if [[ "$1" =~ ^[a-z]{2,3}$ ]]
+if [[ $1 =~ ^[a-z]{2,3}$ ]]
 then
    #echo " 2-3 lower case letters"
    return 0

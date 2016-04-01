@@ -33,7 +33,3 @@ sed '3,6 a append this after' file
 # read sed instructions from file insert.3-5
 sed -f insert.3-6 file 
 ```
-
-## awk 
-This is here for completeness as we often use sed with awk, but it is not covered in this course
-* Tutorial http://www.grymoire.com/Unix/Awk.html

@@ -1,0 +1,3 @@
+/chevy/   { print > "chevy.txt" }
+/ford/   { print > "ford.txt" }
+END { print "Finished" }
