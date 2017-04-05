@@ -53,9 +53,11 @@ line=$(head -2 $fn|tail -1)
  
 for line in $(cat $fn) ; do
   let count++
-
+  #echo $count
   name=$(echo $line|cut -d "," -f 1)
   
+  if [[ $count -gt 2 ]] && [[ $name != "" ]] ; then
+ 
   colb=$(echo $line|cut -d "," -f 2)
   colc=$(echo $line|cut -d "," -f 3)
   cold=$(echo $line|cut -d "," -f 4)
@@ -71,7 +73,7 @@ for line in $(cat $fn) ; do
   total=$(echo $line|cut -d "," -f 14)
 
 
-  echo "420-112-dw logic Assignment 1"
+  echo "420-112-dw logic Assignment 2"
   echo "Submitted by  " $name
   echo
 
@@ -83,12 +85,13 @@ for line in $(cat $fn) ; do
   echo -e $hcolg "\t" $colg / $tcolg
   echo -e $hcolh "\t" $colh / $tcolh
   echo -e $hcoli "\t" $coli / $tcoli
-  echo -e $hcolj "\t" $colj / $tcolj
-  echo -e $hcolk "\t" $colk / $tcolk
-  echo -e $hcoll "\t" $coll / $tcoll
-  echo -e $hcolm "\t" $colm / $tcolm
+  
+  #echo -e $hcolj "\t" $colj / $tcolj
+  #echo -e $hcolk "\t" $colk / $tcolk
+  #echo -e $hcoll "\t" $coll / $tcoll
+  #echo -e $hcolm "\t" $colm / $tcolm
  
   echo -e $htotal "\t" $total / $ttotal
   echo ; echo
-
+  fi
 done
