@@ -1,4 +1,4 @@
-##Sample bash scripts for 420-241-DW OS I Linux 2016  
+## Sample bash scripts for 420-241-DW OS I Linux 2016 & 2017
 
 ### Poll Vote please help me improve the content:
 * Code useful or not:  http://goo.gl/lQDitM
