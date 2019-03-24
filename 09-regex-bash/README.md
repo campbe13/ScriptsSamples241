@@ -1,4 +1,4 @@
-#Regex in bash scripting
+# Regex in bash scripting
 
 Some helpful references
 * my quick ref http://bit.ly/regex2014
@@ -6,4 +6,3 @@ Some helpful references
 * http://www.regular-expressions.info/
 * Regex in 55 min http://qntm.org/files/re/re.html
 * practice http://regexone.com/lesson/1
-
