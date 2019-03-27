@@ -32,7 +32,7 @@ else
 fi
 echo string $str
 
-if [[ "$str" =~ in+g  ]] ; then
+if [[ "$str" =~ in+  ]] ; then
   echo $str match 'in+' 
 else
   echo $str no match 'in+'
