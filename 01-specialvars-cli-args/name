@@ -1,872 +1,0 @@
-Script started on Thu 26 Mar 2020 01:19:13 PM EDT
-script name $0 scriptname.sh
-[pcampbell@sonic 01-specialvars-cli-args]$
-]0;pcampbell@sonic:~/ScriptsSamples241/01-specialvars-cli-args[?1034h[pcampbell@sonic 01-specialvars-cli-args]$ script name $0 scriptname.sh
-Script started, file is name
-[pcampbell@sonic 01-specialvars-cli-args]$
-]0;pcampbell@sonic:~/ScriptsSamples241/01-specialvars-cli-args[?1034h[pcampbell@sonic 01-specialvars-cli-args]$ [pcampbell@sonic 01-specialvars-cli-args]$
-bash: [pcampbell@sonic: command not found
-]0;pcampbell@sonic:~/ScriptsSamples241/01-specialvars-cli-args[pcampbell@sonic 01-specialvars-cli-args]$ ^C
-]0;pcampbell@sonic:~/ScriptsSamples241/01-specialvars-cli-args[pcampbell@sonic 01-specialvars-cli-args]$ bash 0x scriptname.sh [C[C[1P[1@-
-+ echo 'run this script using ./ then using bash command, then using absolute path'
-run this script using ./ then using bash command, then using absolute path
-++ basename scriptname.sh
-+ echo script name using basename '$(basename $0)' scriptname.sh
-script name using basename $(basename $0) scriptname.sh
-+ echo script name '$0' scriptname.sh
-script name $0 scriptname.sh
-]0;pcampbell@sonic:~/ScriptsSamples241/01-specialvars-cli-args[pcampbell@sonic 01-specialvars-cli-args]$ bash -x scriptname.sh [1@t
-]0;pcampbell@sonic:~/ScriptsSamples241/01-specialvars-cli-args[pcampbell@sonic 01-specialvars-cli-args]$ bash -tx scriptname.sh [C[1P
-]0;pcampbell@sonic:~/ScriptsSamples241/01-specialvars-cli-args[pcampbell@sonic 01-specialvars-cli-args]$ man bs[Kash
-[?1049h[?1h=BASH(1)                                                                BASH(1)
-
-[1mNAME[0m
-       bash - GNU Bourne-Again SHell
-
-[1mSYNOPSIS[0m
-       [1mbash[0m [options] [file]
-
-[1mCOPYRIGHT[0m
-       Bash is Copyright (C) 1989-2009 by the Free Software Foundation, Inc.
-
-[1mDESCRIPTION[0m
-       [1mBash[0m  is  an [1msh[0m-compatible command language interpreter that executes commands read
-       from the standard input or from a file.  [1mBash[0m  also  incorporates  useful  features
-       from the [4mKorn[24m and [4mC[24m shells ([1mksh[0m and [1mcsh[0m).
-
-       [1mBash[0m  is intended to be a conformant implementation of the Shell and Utilities por-
-       tion of the IEEE POSIX specification (IEEE Standard 1003.1).  [1mBash[0m can  be  config-
-       ured to be POSIX-conformant by default.
-
-[1mOPTIONS[0m
-       In  addition to the single-character shell options documented in the description of
-       the [1mset[0m builtin command, [1mbash[0m interprets the following options when it is invoked:
-
-       [1m-c[0m [4mstring[24m If the [1m-c[0m option is present, then commands  are  read  from  [4mstring[24m.   If
-                 there are arguments after the [4mstring[24m, they are assigned to the positional
-                 parameters, starting with [1m$0[0m.
-       [1m-i[0m        If the [1m-i[0m option is present, the shell is [4minteractive[24m.
-       [1m-l[0m        Make [1mbash[0m act as if it had been invoked as a login shell (see  [1mINVOCATION[0m
-                 below).
-       [1m-r[0m        If the [1m-r[0m option is present, the shell becomes [4mrestricted[24m (see [1mRESTRICTED[0m
-                 [1mSHELL[0m below).
-       [1m-s[0m        If the [1m-s[0m option is present, or if no arguments remain after option  pro-
-:[K[K/[K--[Ktt[K[1;1HBASH(1)                                                                BASH(1)
-[2;1H
-[3;1H[1mNAME[0m
-[4;1H       bash - GNU Bourne-Again SHell
-[5;1H
-[6;1H[1mSYNOPSIS[0m
-[7;1H       [1mbash[0m [options] [file]
-[8;1H
-[9;1H[1mCOPYRIGHT[0m
-[10;1H       Bash is Copyright (C) 1989-2009 by the Free Software Foundation, Inc.
-[11;1H
-[12;1H[1mDESCRIPTION[0m
-[13;1H       [1mBash[0m  is  an [1msh[0m-compatible command language interpreter that executes commands read
-[14;1H       from the standard input or from a-args]$
-bash: [pcampbell@sonic: command not found
-]0;pcampbell@sonic:~/ScriptsSamples241/01-specialvars-cli-args[pcampbell@sonic 01-specialvars-cli-args]$ ^C
-]0;pcampbell@sonic:~/ScriptsSamples241/01-specialvars-cli-args[pcampbell@sonic 01-specialvars-cli-args]$ bash 0x scriptname.sh [C[C[1P[1@-
-+ echo 'run this script using ./ then using bash command, then using absolute path'
-run this script using ./ then using bash command, then using absolute path
-++ basename scriptname.sh
-+ echo script name using basename '$(basename $0)' scriptname.sh
-script name using basename $(basename $0) scriptname.sh
-+ echo script name '$0' scriptname.sh
-script name $0 scriptname.sh
-]0;pcampbell@sonic:~/ScriptsSamples241/01-specialvars-cli-args[pcampbell@sonic 01-specialvars-cli-args]$ bash -x scriptname.sh [1@t
-]0;pcampbell@sonic:~/ScriptsSamples241/01-specialvars-cli-args[pcampbell@sonic 01-specialvars-cli-args]$ bash -tx scriptname.sh [C[1P
-]0;pcampbell@sonic:~/ScriptsSamples241/01-specialvars-cli-args[pcampbell@sonic 01-specialvars-cli-args]$ man bs[Kash
-[?1049h[?1h=BASH(1)                                                                BASH(1)
-
-[1mNAME[0m
-       bash - GNU Bourne-Again SHell
-
-[1mSYNOPSIS[0m
-       [1mbash[0m [options] [file]
-
-[1mCOPYRIGHT[0m
-       Bash is Copyright (C) 1989-2009 by the Free Software Foundation, Inc.
-
-[1mDESCRIPTION[0m
-       [1mBash[0m  is  an [1msh[0m-compatible command language interpreter that executes commands read
-       from the standard input or from a file.  [1mBash[0m  also  incorporates  useful  features
-       from the [4mKorn[24m and [4mC[24m shells ([1mksh[0m and [1mcsh[0m).
-
-       [1mBash[0m  is intended to be a conformant implementation of the Shell and Utilities por-
-       tion of the IEEE POSIX specification (IEEE Standard 1003.1).  [1mBash[0m can  be  config-
-       ured to be POSIX-conformant by default.
-
-[1mOPTIONS[0m
-       In  addition to the single-character shell options documented in the description of
-       the [1mset[0m builtin command, [1mbash[0m interprets the following options when it is invoked:
-
-       [1m-c[0m [4mstring[24m If the [1m-c[0m option is present, then commands  are  read  from  [4mstring[24m.   If
-                 there are arguments after the [4mstring[24m, they are assigned to the positional
-                 parameters, starting with [1m$0[0m.
-       [1m-i[0m        If the [1m-i[0m option is present, the shell is [4minteractive[24m.
-       [1m-l[0m        Make [1mbash[0m act as if it had been invoked as a login shell (see  [1mINVOCATION[0m
-                 below).
-       [1m-r[0m        If the [1m-r[0m option is present, the shell becomes [4mrestricted[24m (see [1mRESTRICTED[0m
-                 [1mSHELL[0m below).
-       [1m-s[0m        If the [1m-s[0m option is present, or if no arguments remain after option  pro-
-:[K[K/[K--[Ktt[K[1;1HBASH(1)                                                                BASH(1)
-[2;1H
-[3;1H[1mNAME[0m
-[4;1H       bash - GNU Bourne-Again SHell
-[5;1H
-[6;1H[1mSYNOPSIS[0m
-[7;1H       [1mbash[0m [options] [file]
-[8;1H
-[9;1H[1mCOPYRIGHT[0m
-[10;1H       Bash is Copyright (C) 1989-2009 by the Free Software Foundation, Inc.
-[11;1H
-[12;1H[1mDESCRIPTION[0m
-[13;1H       [1mBash[0m  is  an [1msh[0m-compatible command language interpreter that executes commands read
-[14;1H       from the standard input or from a file.  [1mBash[0m  also  incorporates  useful  features
-[15;1H       from the [4mKorn[24m and [4mC[24m shells ([1mksh[0m and [1mcsh[0m).
-[16;1H
-[17;1H       [1mBash[0m  is intended to be a conformant implementation of the Shell and Utilities por-
-[18;1H       tion of the IEEE POSIX specification (IEEE Standard 1003.1).  [1mBash[0m can  be  config-
-[19;1H       ured to be POSIX-conformant by default.
-[20;1H
-[21;1H[1mOPTIONS[0m
-[22;1H       In  addition to tsion[0m
-       [4mBrace[24m  [4mexpansion[24m  is a mechanism by which arbitrary strings may be generated.  This
-       mechanism is similar to [4mpathname[24m [4mexpansion[24m, but the filenames  generated  need  not
-       exist.   Patterns  to be brace expanded take the form of an optional [4mpreamble[24m, fol-
-       lowed by either a series  of  comma-separated  strings  or  a  sequence  expression
-       between a pair of braces, followed by an optional [4mpostscript[24m.  The preamble is pre-
-       fixed to each string contained within  the  braces,  and  the  postscript  is  then
-       appended to each resulting string, expanding left to right.
-
-       Brace  expansions  may  be  nested.   The  results  of each expanded string are not
-       sorted; left to right order is preserved.  For example, a[1m{[0md,c,b[1m}[0me expands into ‘ade
-       ace abe’.
-
-       A sequence expression takes the form [1m{[0m[4mx[24m[1m..[0m[4my[24m[1m[..[0m[4mincr[24m[1m]}[0m, where [4mx[24m and [4my[24m are either inte-
-       gers or single characters, and [4mincr[24m, an optional increment, is  an  integer.   When
-       integers  are  supplied,  the  expression  expands  to each number between [4mx[24m and [4my[24m,
-       inclusive.  Supplied integers may be prefixed with [4m0[24m to force each term to have the
-       same width.  When either [4mx[24m or [4my[24m begins with a zero, the shell attempts to force all
-       generated terms to contain the same number of digits, zero-padding where necessary.
-       When characters are supplied, the expression expands to each character lexicograph-
-       ically between [4mx[24m and [4my[24m, inclusive.  Note that both [4mx[24m and [4my[24m  must  be  of  the  same
-       type.   When  the  increment is supplied, it is used as the difference between each
-:[K[K/[K...skipping...
-       [1m[7m-t[27m[0m [4mfd[24m  True if file descriptor [4mfd[24m is open and refers to a terminal.
-       [1m-u[0m [4mfile[24m
-              True if [4mfile[24m exists and its set-user-id bit is set.
-       [1m-w[0m [4mfile[24m
-              True if [4mfile[24m exists and is writable.
-       [1m-x[0m [4mfile[24m
-              True if [4mfile[24m exists and is executable.
-       [1m-O[0m [4mfile[24m
-              True if [4mfile[24m exists and is owned by the effective user id.
-       [1m-G[0m [4mfile[24m
-              True if [4mfile[24m exists and is owned by the effective group id.
-       [1m-L[0m [4mfile[24m
-              True if [4mfile[24m exists and is a symbolic link.
-       [1m-S[0m [4mfile[24m
-              True if [4mfile[24m exists and is a socket.
-       [1m-N[0m [4mfile[24m
-              True if [4mfile[24m exists and has been modified since it was last read.
-       [4mfile1[24m -[1mnt[0m [4mfile2[24m
-              True if [4mfile1[24m is newer (according to modification date) than  [4mfile2[24m,  or  if
-              [4mfile1[24m exists and [4mfile2[24m does not.
-       [4mfile1[24m -[1mot[0m [4mfile2[24m
-              True if [4mfile1[24m is older than [4mfile2[24m, or if [4mfile2[24m exists and [4mfile1[24m does not.
-       [4mfile1[24m [1m-ef[0m [4mfile2[24m
-              True if [4mfile1[24m and [4mfile2[24m refer to the same device and inode numbers.
-       [1m-o[0m [4moptname[24m
-              True  if shell option [4moptname[24m is enabled.  See the list of options under the
-              description of the [1m-o[0m option to the [1mset[0m builtin below.
-       [1m-z[0m [4mstring[24m
-              True if the length of [4mstring[24m is zero.
-       [4mstring[24m
-       [1m-n[0m [4mstring[24m
-              True if the length of [4mstring[24m is non-zero.
-
-:[K[K/[K...skipping...
-       [1mbind[0m[1m[7m-t[27m[0m[1mty-special-chars[0m [1m(On)[0m
-              If set to [1mOn[0m, readline attempts to bind the control characters treated  sp              True if [4mfile1[24m is newer (according to modification date) than  [4mfile2[24m,  or  if
-              [4mfile1[24m exists and [4mfile2[24m does not.
-       [4mfile1[24m -[1mot[0m [4mfile2[24m
-              True if [4mfile1[24m is older than [4mfile2[24m, or if [4mfile2[24m exists and [4mfile1[24m does not.
-       [4mfile1[24m [1m-ef[0m [4mfile2[24m
-              True if [4mfile1[24m and [4mfile2[24m refer to the same device and inode numbers.
-       [1m-o[0m [4moptname[24m
-              True  if shell option [4moptname[24m is enabled.  See the list of options under the
-              description of the [1m-o[0m option to the [1mset[0m builtin below.
-       [1m-z[0m [4mstring[24m
-              True if the length of [4mstring[24m is zero.
-       [4mstring[24m
-       [1m-n[0m [4mstring[24m
-              True if the length of [4mstring[24m is non-zero.
-
-:[K[K/[K...skipping...
-       [1mbind[0m[1m[7m-t[27m[0m[1mty-special-chars[0m [1m(On)[0m
-              If set to [1mOn[0m, readline attempts to bind the control characters treated  spe-
-              cially by the kernel’s terminal driver to their readline equivalents.
-       [1mcomment-begin[0m [1m(‘‘#’’)[0m
-              The string that is inserted when the readline [1minsert-comment[0m command is exe-
-              cuted.  This command is bound to [1mM-#[0m in emacs mode and to [1m#[0m  in  vi  command
-              mode.
-       [1mcompletion-ignore-case[0m [1m(Off)[0m
-              If  set  to  [1mOn[0m,  readline  performs  filename  matching and completion in a
-              case-insensitive fashion.
-       [1mcompletion-prefix-display-length[0m [1m(0)[0m
-              The length in characters of the common prefix of a list of possible  comple-
-              tions  that  is displayed without modification.  When set to a value greater
-              than zero, common prefixes longer than  this  value  are  replaced  with  an
-              ellipsis when displaying possible completions.
-       [1mcompletion-query-items[0m [1m(100)[0m
-              This  determines when the user is queried about viewing the number of possi-
-              ble completions generated by the [1mpossible-completions[0m command.   It  may  be
-              set  to  any  integer value greater than or equal to zero.  If the number of
-              possible completions is greater than or equal to the value of this variable,
-              the  user is asked whether or not he wishes to view them; otherwise they are
-              simply listed on the terminal.
-       [1mconvert-meta[0m [1m(On)[0m
-              If set to [1mOn[0m, readline will convert characters with the eighth bit set to an
-              ASCII key sequence by stripping the eighth bit and prefixing an escape char-
-              acter (in effect, using escape as the [4mmeta[24m [4mprefix[24m).
-       [1mdisable-completion[0m [1m(Off)[0m
-              If set to [1mOn[0m, readline will inhibit word completion.  Completion  characters
-              will be inserted into the line as if they had been mapped to [1mself-insert[0m.
-       [1mediting-mode[0m [1m(emacs)[0m
-              Controls whether readline begins with a set of key bindings similar to [4memacs[24m
-              or [4mvi[24m.  [1mediting-mode[0m can be set to either [1memacs[0m or [1mvi[0m.
-       [1mecho-control-characters[0m [1m(On)[0m
-:[K[K              When set to [1mOn[0m, on operating systems that indicate they support it, readline
-:[K[K?[K[HM       [1mbind[0m[1m[7m-t[27m[0m[1mty-special-chars[0m [1m(On)[0m
-[34;1H[K:[K[K?[K[H[2J[HM
-[HM              True if the length of [4mstring[24m is non-zero.
-[HM       [1m-n[0m [4mstring[24m
-[HM       [4mstring[24m
-[HM              True if the length of [4mstring[24m is zero.
-[HM       [1m-z[0m [4mstring[24m
-[HM              description of the [1m-o[0m option    [1mecho-control-characters[0m [1m(On)[0m
-:[K[K              When set to [1mOn[0m, on operating systems that indicate they support it, readline
-:[K[K?[K[HM       [1mbind[0m[1m[7m-t[27m[0m[1mty-special-chars[0m [1m(On)[0m
-[34;1H[K:[K[K?[K[H[2J[HM
-[HM              True if the length of [4mstring[24m is non-zero.
-[HM       [1m-n[0m [4mstring[24m
-[HM       [4mstring[24m
-[HM              True if the length of [4mstring[24m is zero.
-[HM       [1m-z[0m [4mstring[24m
-[HM              description of the [1m-o[0m option to the [1mset[0m builtin below.
-[HM              True  if shell option [4moptname[24m is enabled.  See the list of options under the
-[HM       [1m-o[0m [4moptname[24m
-[HM              True if [4mfile1[24m and [4mfile2[24m refer to the same device and inode numbers.
-[HM       [4mfile1[24m [1m-ef[0m [4mfile2[24m
-[HM              True if [4mfile1[24m is older than [4mfile2[24m, or if [4mfile2[24m exists and [4mfile1[24m does not.
-[HM       [4mfile1[24m -[1mot[0m [4mfile2[24m
-[HM              [4mfile1[24m exists and [4mfile2[24m does not.
-[HM              True if [4mfile1[24m is newer (according to modification date) than  [4mfile2[24m,  or  if
-[HM       [4mfile1[24m -[1mnt[0m [4mfile2[24m
-[HM              True if [4mfile[24m exists and has been modified since it was last read.
-[HM       [1m-N[0m [4mfile[24m
-[HM              True if [4mfile[24m exists and is a socket.
-[HM       [1m-S[0m [4mfile[24m
-[HM              True if [4mfile[24m exists and is a symbolic link.
-[HM       [1m-L[0m [4mfile[24m
-[HM              True if [4mfile[24m exists and is owned by the effective group id.
-[HM       [1m-G[0m [4mfile[24m
-[HM              True if [4mfile[24m exists and is owned by the effective user id.
-[HM       [1m-O[0m [4mfile[24m
-[HM              True if [4mfile[24m exists and is executable.
-[HM       [1m-x[0m [4mfile[24m
-[HM              True if [4mfile[24m exists and is writable.
-[HM       [1m-w[0m [4mfile[24m
-[HM              True if [4mfile[24m exists and its set-user-id bit is set.
-[HM       [1m-u[0m [4mfile[24m
-[HM       [1m[7m-t[27m[0m [4mfd[24m  True if file descriptor [4mfd[24m is open and refers to a terminal.
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              True if [4mfile[24m exists and has a size greater than zero.
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM       [1m-s[0m [4mfile[24m
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              True if [4mfile[24m exists and is readable.
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM       [1m-r[0m [4mfile[24m
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              True if [4mfile[24m exists and is a named pipe (FIFO).
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM       [1m-p[0m [4mfile[24m
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              True if [4mfile[24m exists and its ‘‘sticky’’ bit is set.
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM       [1m-k[0m [4mfile[24m
-[34;1H[K:[K[K/[K              True  if shell option [4moptname[24m is enabled.  See the list of options under the
-              description of the [1m-o[0m option to the [1mset[0m builtin below.
-       [1m-z[0m [4mstring[24m
-              True if the length of [4mstring[24m is zero.
-       [4mstring[24m
-       [1m-n[0m [4mstring[24m
-              True if the length of [4mstring[24m is non-zero.
-
-:[K[K/[K...skipping...
-       [1mbind[0m[1m[7m-t[27m[0m[1mty-special-chars[0m [1m(On)[0m
-              If set to [1mOn[0m, readline attempts to bind the control characters treated  spe-
-              cially by the kernel’s terminal driver to their readline equivalents.
-       [1mcomment-begin[0m [1m(‘‘#’’)[0m
-              The string that is inserted when the readlkey sequence by stripping the eighth bit and prefixing an escape char-
-              acter (in effect, using escape as the [4mmeta[24m [4mprefix[24m).
-       [1mdisable-completion[0m [1m(Off)[0m
-              If set to [1mOn[0m, readline will inhibit word completion.  Completion  characters
-              will be inserted into the line as if they had been mapped to [1mself-insert[0m.
-       [1mediting-mode[0m [1m(emacs)[0m
-              Controls whether readline begins with a set of key bindings similar to [4memacs[24m
-              or [4mvi[24m.  [1mediting-mode[0m can be set to either [1memacs[0m or [1mvi[0m.
-       [1mecho-control-characters[0m [1m(On)[0m
-:[K[K/[K...skipping...
-       [1mexpand[0m[1m[7m-t[27m[0m[1milde[0m [1m(Off)[0m
-              If set to [1mon[0m, tilde expansion is performed when readline attempts word  com-
-              pletion.
-       [1mhistory-preserve-point[0m [1m(Off)[0m
-              If  set to [1mon[0m, the history code attempts to place point at the same location
-              on each history line retrieved with [1mprevious-history[0m or [1mnext-history[0m.
-       [1mhistory-size[0m [1m(0)[0m
-              Set the maximum number of history entries saved in the history list.  If set
-              to zero, the number of entries in the history list is not limited.
-       [1mhorizontal-scroll-mode[0m [1m(Off)[0m
-              When  set to [1mOn[0m, makes readline use a single line for display, scrolling the
-              input horizontally on a single screen line when it becomes longer  than  the
-              screen width rather than wrapping to a new line.
-       [1minput-meta[0m [1m(Off)[0m
-              If  set  to  [1mOn[0m,  readline will enable eight-bit input (that is, it will not
-              strip the high bit from the characters it reads),  regardless  of  what  the
-              terminal  claims  it  can support.  The name [1mmeta-flag[0m is a synonym for this
-              variable.
-       [1misearch[0m[1m[7m-t[27m[0m[1merminators[0m [1m(‘‘C-[C-J’’)[0m
-              The string of characters that should terminate an incremental search without
-              subsequently executing the character as a command.  If this variable has not
-              been given a value, the characters [4mESC[24m and [4mC-J[24m will terminate an incremental
-              search.
-       [1mkeymap[0m [1m(emacs)[0m
-              Set  the  current  readline keymap.  The set of valid keymap names is [4memacs,[24m
-              [4memacs-standard,[24m [4memacs-meta,[24m [4memacs-ctlx,[24m [4mvi,[24m [4mvi-command[24m, and  [4mvi-insert[24m.   [4mvi[24m
-              is  equivalent  to  [4mvi-command[24m;  [4memacs[24m is equivalent to [4memacs-standard[24m.  The
-              default value is [4memacs[24m; the value of [1mediting-mode[0m also affects  the  default
-              keymap.
-       [1mmark-directories[0m [1m(On)[0m
-              If set to [1mOn[0m, completed directory names have a slash appended.
-       [1mmark-modified-lines[0m [1m(Off)[0m
-              If  set  to  [1mOn[0m,  history lines that have been modified are displayed with a
-:[K[K/[K              preceding asterisk ([1m*[0m).
-       [1mmark-symlinked-directories[0m [1m(Off)[0m
-              If set to [1mOn[0m, completed names which are symbolic links to directories have a
-              slash appended (subject to the value of [1mmark-directories[0m).
-       [1mmatch-hidden-files[0m [1m(On)[0m
-              This  variable,  when  set to [1mOn[0m, causes readline to match files whose names
-              begin with a ‘.’ (hidden files) when performing filename completion,  unless
-              the leading ‘.’ is supplied by the user in the filename to be completed.
-       [1moutput-meta[0m [1m(Off)[0m
-              If  set  to  [1mOn[0m,  readline  will  display characters with the eighth bit set
-              directlym
-              If  set  to  [1mOn[0m,  history lines that have been modified are displayed with a
-:[K[K/[K              preceding asterisk ([1m*[0m).
-       [1mmark-symlinked-directories[0m [1m(Off)[0m
-              If set to [1mOn[0m, completed names which are symbolic links to directories have a
-              slash appended (subject to the value of [1mmark-directories[0m).
-       [1mmatch-hidden-files[0m [1m(On)[0m
-              This  variable,  when  set to [1mOn[0m, causes readline to match files whose names
-              begin with a ‘.’ (hidden files) when performing filename completion,  unless
-              the leading ‘.’ is supplied by the user in the filename to be completed.
-       [1moutput-meta[0m [1m(Off)[0m
-              If  set  to  [1mOn[0m,  readline  will  display characters with the eighth bit set
-              directly rather than as a meta-prefixed escape sequence.
-       [1mpage-completions[0m [1m(On)[0m
-              If set to [1mOn[0m, readline uses an internal [4mmore[24m-like pager to display a screen-
-              ful of possible completions at a time.
-       [1mprint-completions-horizontally[0m [1m(Off)[0m
-              If set to [1mOn[0m, readline will display completions with matches sorted horizon-
-              tally in alphabetical order, rather than down the screen.
-       [1mrevert-all-at-newline[0m [1m(Off)[0m
-:[K[K/[K...skipping...
-       [1mskip-completed[0m[1m[7m-t[27m[0m[1mext[0m [1m(Off)[0m
-              If set to [1mOn[0m, this alters the default completion behavior when  inserting  a
-              single  match into the line.  It’s only active when performing completion in
-              the middle of a word.  If enabled, readline does not insert characters  from
-              the  completion  that  match  characters  after point in the word being com-
-              pleted, so portions of the word following the cursor are not duplicated.
-       [1mvisible-stats[0m [1m(Off)[0m
-              If set to [1mOn[0m, a character denoting a file’s type as reported by  [4mstat[24m(2)  is
-              appended to the filename when listing possible completions.
-
-   [1mReadline[0m [1mConditional[0m [1mConstructs[0m
-       Readline  implements  a  facility  similar in spirit to the conditional compilation
-       features of the C preprocessor which allows key bindings and variable  settings  to
-       be performed as the result of tests.  There are four parser directives used.
-
-       [1m$if[0m    The  [1m$if[0m construct allows bindings to be made based on the editing mode, the
-              terminal being used, or the application using readline.   The  text  of  the
-              test  extends  to the end of the line; no characters are required to isolate
-              it.
-
-              [1mmode[0m   The [1mmode=[0m form of the [1m$if[0m directive is used to test whether  readline
-                     is in emacs or vi mode.  This may be used in conjunction with the [1mset[0m
-                     [1mkeymap[0m command, for instance, to set bindings in  the  [4memacs-standard[24m
-                     and  [4memacs-ctlx[24m  keymaps  only  if  readline is starting out in emacs
-                     mode.
-
-              [1mterm[0m   The [1mterm=[0m form may be used to include terminal-specific key bindings,
-                     perhaps  to  bind the key sequences output by the terminal’s function
-                     keys.  The word on the right side of the [1m=[0m is tested against the both
-                     full name of the terminal and the portion of the terminal name before
-                     the first [1m-[0m.  This allows [4msun[24m to match  both  [4msun[24m  and  [4msun-cmd[24m,  for
-                     instance.
-
-:[K[K/[K...skipping...
-       ters present in the value of the [1misearch[0m[1m[7m-t[27m[0m[1merminators[0m variable are used to terminate
-       an incremental search.  If that two Control-Rs are typed
-       without  any  intervening  characters  defining a new search string, any remembered
-       search string is used.
-
-       Non-incremental searches read the entire search string before  starting  to  search
-       for  matching history lines.  The search string may be typed by the user or be part
-       of the contents of the current line.
-
-   [1mReadline[0m [1mCommand[0m [1mNames[0m
-       The following is a list of the names of the commands and the default key  sequences
-       to  which  they  are bound.  Command names without an accompanying key sequence are
-       unbound by default.  In the following descriptions, [4mpoint[24m  refers  to  the  current
-       cursor  position,  and  [4mmark[24m refers to a cursor position saved by the [1mset-mark[0m com-
-       mand.  The text between the point and mark is referred to as the [4mregion[24m.
-
-   [1mCommands[0m [1mfor[0m [1mMoving[0m
-       [1mbeginning-of-line[0m [1m(C-a)[0m
-              Move to the start of the current line.
-       [1mend-of-line[0m [1m(C-e)[0m
-              Move to the end of the line.
-:[K[K/[K...skipping...
-       [1mtranspose-chars[0m [1m(C[0m[1m[7m-t[27m[0m[1m)[0m
-              Drag the character before point forward over the character at point,  moving
-              point forward as well.  If point is at the end of the line, then this trans-
-              poses the two characters before point.  Negative arguments have no effect.
-       [1mtranspose-words[0m [1m(M[0m[1m[7m-t[27m[0m[1m)[0m
-              Drag the word before point past the word after point, moving point over that
-              word  as well.  If point is at the end of the line, this transposes the last
-              two words on the line.
-       [1mupcase-word[0m [1m(M-u)[0m
-              Uppercase the current (or following) word.  With a negative argument, upper-
-              case the previous word, but do not move point.
-       [1mdowncase-word[0m [1m(M-l)[0m
-              Lowercase the current (or following) word.  With a negative argument, lower-
-              case the previous word, but do not move point.
-       [1mcapitalize-word[0m [1m(M-c)[0m
-              Capitalize the current (or following) word.  With a negative argument, capi-
-              talize the previous word, but do not move point.
-       [1moverwrite-mode[0m
-              Toggle overwrite mode.  With an explicit positive numeric argument, switches
-              to overwrite mode.  With an explicit non-positive numeric argument, switches
-              to  insert  mode.   This command affects only [1memacs[0m mode; [1mvi[0m mode does over-
-              write differently.  Each call to [4mreadline()[24m starts in insert mode.  In over-
-              write mode, characters bound to [1mself-insert[0m replace the text at point rather
-              than  pushing  the  text  to  the  right.    Characters   bound   to   [1mback-[0m
-              [1mward-delete-char[0m  replace  the  character  before  point  with  a space.  By
-              default, this command is unbound.
-
-   [1mKilling[0m [1mand[0m [1mYanking[0m
-       [1mkill-line[0m [1m(C-k)[0m
-              Kill the text from point to the end of the line.
-       [1mbackward-kill-line[0m [1m(C-x[0m [1mRubout)[0m
-              Kill backward to the beginning of the line.
-       [1munix-line-discard[0m [1m(C-u)[0m
-:[K[K/[K              Kill backward from point to the beginning of the line.  The killed  text  is
-              saved on the kill-ring.
-       [1mkill-whole-line[0m
-              Kill all characters on the current line, no matter where point is.
-:[K[K/[K...skipping...
-       [1mdynamic-complete-history[0m [1m(M[0m[1m[7m-T[27m[0m[1mAB)[0m
-              Attempt completion on the text before  point,  comparing  the  text  against
-              lines from the history list for possible completion matches.
-       [1mdabbrev-expand[0m
-           tive numeric argument, switches
-              to  insert  mode.   This command affects only [1memacs[0m mode; [1mvi[0m mode does over-
-              write differently.  Each call to [4mreadline()[24m starts in insert mode.  In over-
-              write mode, characters bound to [1mself-insert[0m replace the text at point rather
-              than  pushing  the  text  to  the  right.    Characters   bound   to   [1mback-[0m
-              [1mward-delete-char[0m  replace  the  character  before  point  with  a space.  By
-              default, this command is unbound.
-
-   [1mKilling[0m [1mand[0m [1mYanking[0m
-       [1mkill-line[0m [1m(C-k)[0m
-              Kill the text from point to the end of the line.
-       [1mbackward-kill-line[0m [1m(C-x[0m [1mRubout)[0m
-              Kill backward to the beginning of the line.
-       [1munix-line-discard[0m [1m(C-u)[0m
-:[K[K/[K              Kill backward from point to the beginning of the line.  The killed  text  is
-              saved on the kill-ring.
-       [1mkill-whole-line[0m
-              Kill all characters on the current line, no matter where point is.
-:[K[K/[K...skipping...
-       [1mdynamic-complete-history[0m [1m(M[0m[1m[7m-T[27m[0m[1mAB)[0m
-              Attempt completion on the text before  point,  comparing  the  text  against
-              lines from the history list for possible completion matches.
-       [1mdabbrev-expand[0m
-              Attempt menu completion on the text before point, comparing the text against
-              lines from the history list for possible completion matches.
-       [1mcomplete-into-braces[0m [1m(M-{)[0m
-              Perform filename completion and insert  the  list  of  possible  completions
-              enclosed  within  braces  so  the  list is available to the shell (see [1mBrace[0m
-              [1mExpansion[0m above).
-
-   [1mKeyboard[0m [1mMacros[0m
-       [1mstart-kbd-macro[0m [1m(C-x[0m [1m()[0m
-              Begin saving the characters typed into the current keyboard macro.
-       [1mend-kbd-macro[0m [1m(C-x[0m [1m))[0m
-              Stop saving the characters typed into the current keyboard macro  and  store
-              the definition.
-       [1mcall-last-kbd-macro[0m [1m(C-x[0m [1me)[0m
-              Re-execute  the last keyboard macro defined, by making the characters in the
-              macro appear as if typed at the keyboard.
-
-   [1mMiscellaneous[0m
-       [1mre-read-init-file[0m [1m(C-x[0m [1mC-r)[0m
-              Read in the contents of the [4minputrc[24m file, and incorporate  any  bindings  or
-              variable assignments found there.
-       [1mabort[0m [1m(C-g)[0m
-              Abort  the  current editing command and ring the terminal’s bell (subject to
-              the setting of [1mbell-style[0m).
-       [1mdo-uppercase-version[0m [1m(M-a,[0m [1mM-b,[0m [1mM-[0m[4mx[24m[1m,[0m [1m...)[0m
-              If the metafied character [4mx[24m is lowercase, run the command that is  bound  to
-              the corresponding uppercase character.
-       [1mprefix-meta[0m [1m(ESC)[0m
-              Metafy the next character typed.  [1mESC[0m [1mf[0m is equivalent to [1mMeta-f[0m.
-:[K[K/[K...skipping...
-              [1m[7m-t[27m[0m     Give each [4mname[24m the [4mtrace[24m attribute.   Traced  functions  inherit  the
-                     [1mDEBUG[0m  and  [1mRETURN[0m traps from the calling shell.  The trace attribute
-                     has no special meaning for variables.
-              [1m-u[0m     When the variable is assigned a value, all lower-case characters  are
-                     converted to upper-case.  The lower-case attribute is disabled.
-              [1m-x[0m     Mark [4mname[24ms for export to subsequent commands via the environment.
-
-              Using  ‘+’  instead  of ‘-’ turns off the attribute instead, with the excep-
-              tions that [1m+a[0m may not be used to24m     Displays  the  [4mn[24mth entry counting from the right of the list shown by
-                     [1mdirs[0m when invoked without options, starting with zero.
-              [1m-c[0m     Clears the directory stack by deleting all of the entries.
-              [1m-l[0m     Produces a longer listing; the default listing format uses a tilde to
-                     denote the home directory.
-:[K[K [KESCESC[KOO[KAA[K[HM                     subsequent assignment statements or unset.
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              [1m-r[0m     Make  [4mname[24ms  readonly.  These names cannot then be assigned values by
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                     converted to lower-case.  The upper-case attribute is disabled.
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              [1m-l[0m     When the variable is assigned a value, all upper-case characters  are
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                     assigned a value.
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM                     [1mARITHMETIC[0m  [1mEVALUATION[0m  above)  is  performed  when  the  variable is
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              [1m-i[0m     The variable is treated as an  integer;  arithmetic  evaluation  (see
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              [1m-f[0m     Use function names only.
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              [1m-A[0m     Each [4mname[24m is an associative array variable (see [1mArrays[0m above).
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              [1m-a[0m     Each [4mname[24m is an indexed array variable (see [1mArrays[0m above).
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              give variables attributes:
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              be  used  to restrict output to variables with the specified attribute or to
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              are displayed as well.  The [1m-F[0m option implies [1m-f[0m.  The following options can
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              [1mshopt[0m,  the  source  file name and line number where the function is defined
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              attributes are printed.  If the  [1mextdebug[0m  shell  option  is  enabled  using
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              inhibits  the  display  of  function definitions; only the function name and
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              The [1m-f[0m option will restrict the display to shell functions.  The  [1m-F[0m  option
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              [1m-p[0m,  [1mdeclare[0m  will display the attributes and values of all shell variables.
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              specified by the additional options.  If no other options are supplied  with
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              display  the  attributes  and  values of all variables having the attributes
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              options are ignored.  When [1m-p[0m is supplied without [4mname[24m  arguments,  it  will
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              and  values  of  each [4mname[24m.  When [1m-p[0m is used with [4mname[24m arguments, additional
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              display the values of variables.  The [1m-p[0m option will display the  attributes
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              Declare  variables  and/or give them attributes.  If no [4mname[24ms are given then
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM       [1mtypeset[0m [[1m-aAfFilrtux[0m] [[1m-p[0m] [[4mname[24m[=[4mvalue[24m] ...]
-[34;1H[K:[K[K [KESCESC[nd/or give them attributes.  If no [4mname[24ms are given then
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM       [1mtypeset[0m [[1m-aAfFilrtux[0m] [[1m-p[0m] [[4mname[24m[=[4mvalue[24m] ...]
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM       [1mdeclare[0m [[1m-aAfFilrtux[0m] [[1m-p[0m] [[4mname[24m[=[4mvalue[24m] ...]
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              is 0.
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              returns 0 value. When [1mcontinue[0m is executed outside of loop, the return value
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              loop,  the  return  value  is  non-zero  when  [4mn[24m is ≤ 0; Otherwise, [1mcontinue[0m
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              (the ‘‘top-level’’ loop) is resumed.  When [1mcontinue[0m is  executed  inside  of
-[34;1H[K:[K[K [KESCESC[KOO[KAA[K[HM              If  [4mn[24m is greater than the number of enclosing loops, the last enclosing loop
-[34;1H[K:[K[K/[K                     [1mDEBUG[0m  and  [1mRETURN[0m traps from the calling shell.  The trace attribute
-                     has no special meaning for variables.
-              [1m-u[0m     When the variable is assigned a value, all lower-case characters  are
-                     converted to upper-case.  The lower-case attribute is disabled.
-              [1m-x[0m     Mark [4mname[24ms for export to subsequent commands via the environment.
-
-              Using  ‘+’  instead  of ‘-’ turns off the attribute instead, with the excep-
-              tions that [1m+a[0m may not be used to destroy an array variable and [1m+r[0m  will  not
-              remove  the  readonly  attribute.   When used in a function, makes each [4mname[24m
-              local, as with the [1mlocal[0m command.  If a variable name is followed by =[4mvalue[24m,
-              the  value of the variable is set to [4mvalue[24m.  The return value is 0 unless an
-              invalid option is encountered, an attempt is made to define a function using
-              ‘‘-f foo=bar’’, an attempt is made to assign a value to a readonly variable,
-              an attempt is made to assign a value to an array variable without using  the
-              compound  assignment  syntax  (see  [1mArrays[0m above), one of the [4mnames[24m is not a
-              valid shell variable name, an attempt is made to turn  off  readonly  status
-              for  a readonly variable, an attempt is made to turn off array status for an
-              array variable, or an attempt is made to  display  a  non-existent  function
-              with [1m-f[0m.
-
-       [1mdirs[0m [1m[+[0m[4mn[24m[1m][0m [1m[-[0m[4mn[24m[1m][0m [1m[-cplv][0m
-              Without options, displays the list of currently remembered directories.  The
-              default display is on a  single  line  with  directory  names  separated  by
-              spaces.   Directories are added to the list with the [1mpushd[0m command; the [1mpopd[0m
-              command removes entries from the list.
-              [1m+[0m[4mn[24m     Displays the [4mn[24mth entry counting from the left of the  list  shown  by
-                     [1mdirs[0m when invoked without options, starting with zero.
-              [1m-[0m[4mn[24m     Displays  the  [4mn[24mth entry counting from the right of the list shown by
-                     [1mdirs[0m when invoked without options, starting with zero.
-              [1m-c[0m     Clears the directory stack by deleting all of the entries.
-              [1m-l[0m     Produces a longer listing; the default listing format uses a tilde to
-                     denote the home directory.
-:[K[K/[K...skipping...
-              [4mname[24m.   If  the  [1m[7m-t[27m[0m option is supplied, the full pathname to which each [4mname[24m
-              correspnly  status
-              for  a readonly variable, an attempt is made to turn off array status for an
-              array variable, or an attempt is made to  display  a  non-existent  function
-              with [1m-f[0m.
-
-       [1mdirs[0m [1m[+[0m[4mn[24m[1m][0m [1m[-[0m[4mn[24m[1m][0m [1m[-cplv][0m
-              Without options, displays the list of currently remembered directories.  The
-              default display is on a  single  line  with  directory  names  separated  by
-              spaces.   Directories are added to the list with the [1mpushd[0m command; the [1mpopd[0m
-              command removes entries from the list.
-              [1m+[0m[4mn[24m     Displays the [4mn[24mth entry counting from the left of the  list  shown  by
-                     [1mdirs[0m when invoked without options, starting with zero.
-              [1m-[0m[4mn[24m     Displays  the  [4mn[24mth entry counting from the right of the list shown by
-                     [1mdirs[0m when invoked without options, starting with zero.
-              [1m-c[0m     Clears the directory stack by deleting all of the entries.
-              [1m-l[0m     Produces a longer listing; the default listing format uses a tilde to
-                     denote the home directory.
-:[K[K/[K...skipping...
-              [4mname[24m.   If  the  [1m[7m-t[27m[0m option is supplied, the full pathname to which each [4mname[24m
-              corresponds is printed.  If multiple [4mname[24m arguments are  supplied  with  [1m[7m-t[27m[0m,
-              the  [4mname[24m  is printed before the hashed full pathname.  The [1m-l[0m option causes
-              output to be displayed in a format that may be reused as input.  If no argu-
-              ments  are  given,  or  if only [1m-l[0m is supplied, information about remembered
-              commands is printed.  The return status is true unless a [4mname[24m is  not  found
-              or an invalid option is supplied.
-
-       [1mhelp[0m [[1m-dms[0m] [[4mpattern[24m]
-              Display  helpful  information  about builtin commands.  If [4mpattern[24m is speci-
-              fied, [1mhelp[0m gives detailed help on all commands matching  [4mpattern[24m;  otherwise
-              help for all the builtins and shell control structures is printed.
-              [1m-d[0m     Display a short description of each [4mpattern[24m
-              [1m-m[0m     Display the description of each [4mpattern[24m in a manpage-like format
-              [1m-s[0m     Display only a short usage synopsis for each [4mpattern[24m
-       The return status is 0 unless no command matches [4mpattern[24m.
-
-       [1mhistory[0m [1m[[0m[4mn[24m[1m][0m
-       [1mhistory[0m [1m-c[0m
-       [1mhistory[0m [1m-d[0m [4moffset[24m
-       [1mhistory[0m [1m-anrw[0m [[4mfilename[24m]
-       [1mhistory[0m [1m-p[0m [4marg[24m [[4marg[24m [4m...[24m]
-       [1mhistory[0m [1m-s[0m [4marg[24m [[4marg[24m [4m...[24m]
-              With  no options, display the command history list with line numbers.  Lines
-              listed with a [1m*[0m have been modified.  An argument of [4mn[24m lists only the last  [4mn[24m
-              lines.  If the shell variable [1mHISTTIMEFORMAT[0m is set and not null, it is used
-              as a format string for [4mstrftime[24m(3) to display the time stamp associated with
-              each  displayed  history entry.  No intervening blank is printed between the
-              formatted time stamp and the history line.  If [4mfilename[24m is supplied,  it  is
-              used as the name of the history file; if not, the value of [1mHISTFILE[0m is used.
-              Options, if supplied, have the following meanings:
-              [1m-c[0m     Clear the history list by deleting all the entries.
-              [1m-d[0m [4moffset[24m
-:[K[K/[K                     Delete the history entry at position [4moffset[24m.
-:[K[K/[K...pplied the index of  the  next  array  element  to  be
-              assigned as an additional argument.  [4mcallback[24m is evaluated after the line is
-              read but before the array element is assigned.
-
-              If not supplied with an explicit origin, [1mmapfile[0m  will  clear  [4marray[24m  before
-              assigning to it.
-
-              [1mmapfile[0m  returns successfully unless an invalid option or option argument is
-              supplied, [4marray[24m is invalid or unassignable, or if [4marray[24m is  not  an  indexed
-              array.
-
-       [1mpopd[0m [-[1mn[0m] [+[4mn[24m] [-[4mn[24m]
-              Removes  entries  from  the directory stack.  With no arguments, removes the
-              top directory from the stack, and performs a [1mcd[0m to the  new  top  directory.
-              Arguments, if supplied, have the following meanings:
-              [1m-n[0m     Suppresses  the  normal change of directory when removing directories
-:[K[K[?1l>[?1049l]0;pcampbell@sonic:~/ScriptsSamples241/01-specialvars-cli-args[pcampbell@sonic 01-specialvars-cli-args]$ man bash
-[?1049h[?1h=BASH(1)                                                                BASH(1)
-
-[1mNAME[0m
-       bash - GNU Bourne-Again SHell
-
-[1mSYNOPSIS[0m
-       [1mbash[0m [options] [file]
-
-[1mCOPYRIGHT[0m
-       Bash is Copyright (C) 1989-2009 by the Free Software Foundation, Inc.
-
-[1mDESCRIPTION[0m
-       [1mBash[0m  is  an [1msh[0m-compatible command language interpreter that executes commands read
-       from the standard input or from a file.  [1mBash[0m  also  incorporates  useful  features
-       from the [4mKorn[24m and [4mC[24m shells ([1mksh[0m and [1mcsh[0m).
-
-       [1mBash[0m  is intended to be a conformant implementation of the Shell and Utilities por-
-       tion of the IEEE POSIX specification (IEEE Standard 1003.1).  [1mBash[0m can  be  config-
-       ured to be POSIX-conformant by default.
-
-[1mOPTIONS[0m
-       In  addition to the single-character shell options documented in the description of
-       the [1mset[0m builtin command, [1mbash[0m interprets the following options when it is invoked:
-
-       [1m-c[0m [4mstring[24m If the [1m-c[0m option is present, then commands  are  read  from  [4mstring[24m.   If
-                 there are arguments after the [4mstring[24m, they are assigned to the positional
-                 parameters, starting with [1m$0[0m.
-       [1m-i[0m        If the [1m-i[0m option is present, the shell is [4minteractive[24m.
-       [1m-l[0m        Make [1mbash[0m act as if it had been invoked as a login shell (see  [1mINVOCATION[0m
-                 below).
-       [1m-r[0m        If the [1m-r[0m option is present, the shell becomes [4mrestricted[24m (see [1mRESTRICTED[0m
-                 [1mSHELL[0m below).
-       [1m-s[0m        If the [1m-s[0m option is present, or if no arguments remain after option  pro-
-:[K[K [KESCESC[KOO[KBB[K                 cessing,  then  commands  are  read from the standard input.  This option
-:[K[K [KESCESC[KOO[KBB[K                 allows the positional parameters to be set when invoking  an  interactive
-:[K[K [KESCESC[KOO[KBB[K                 shell.
-:[K[K [KESCESC[KOO[KBB[K       [1m-D[0m        A list of all double-quoted strings preceded by [1m$[0m is printed on the stan-
-:[K[K [KESCESC[KOO[KBB[K                 dard output.  These are the strings that are subject to language transla-
-:[K[K [KESCESC[KOO[KBB[K                 tion  when  the  current  locale  is not [1mC[0m or [1mPOSIX[0m.  This implies the [1m-n[0m
-:[K[K [KESCESC[KOO[KBB[K                 option; no commands will be executed.
-:[K[K [KESCESC[KOO[KBB[K       [1m[-+]O[0m [1m[[0m[4mshopt_option[24m[1m][0m
-:[K[K [KESCESC[KOO[KBB[K                 [4mshopt_option[24m is one of the shell options accepted by  the  [1mshopt[0m  builtin
-:[K[K [KESCESC[KOO[KBB[K                 (see  [1mSHELL[0m [1mBUILTIN[0m [1mCOMMANDS[0m below).  If [4mshopt_option[24m is present, [1m-O[0m sets
-:[K[K [KESCESC[KOO[KBB[K                 the value of that option; [1m+O[0m unsets it.  If [4mshopt_option[24m is not supplied,
-:[K[K [KESCESC[KOO[KBB[K                 the  names  and values of the shell options accepted by [1mshopt[0m are printed
-:[K[K [KESCESC[KOO[KBB[K                 on the standard output.  If the invocation option is [1m+O[0m,  the  output  is
-:[K[K [KESCESC[KOO[KBB[K                 displayed in a format that may be reused as input.
-:[K[K [KESCESC[KOO[KBB[K       [1m--[0m        A  [1m--[0m  signals the end of options and disables further option processing.
-:[K[K [KESCESC[KOO[KBB[K                 Any arguments after the [1m--[0m are treated as filenames  and  arguments.   An
-:[K[K [KESCESC[KOO[KBB[K                 argument of [1m-[0m is equivalent to [1m--[0m.
-:[K[K [KESCESC[KOO[KBB[K
-:[K[K [KESCESC[KOO[KBB[K       [1mBash[0m  also  interprets  a  number  of  multi-character options.  These options must
-:[K[K [KESCESC[KOO[KBB[K       appear on the command line before the single-character options to be recognized.
-:[K[K [KESCESC[KOO[KBB[K
-:[K[K [KESCESC[KOO[KBB[K       [1m--debugger[0m
-:[K[K [KESCESC[KOO[KBB[K              Arrange for the debugger profile to be executed  before  the  shell  starts.
-:[K[K [KESCESC[KOO[KBB[K              Turns on extended debugging mode (see the description of the [1mextdebug[0m option
-:[K[K [KESCESC[KOO[KBB[K              to the [1mshopt[0m builtin below) and shell function tracing (see the  description
-:[K[K [KESCESC[KOO[KBB[K              of the [1m-o[0m [1mfunctrace[0m option to the [1mset[0m builtin below).
-:[K[K [KESCESC[KOO[KBB[K       [1m--dump-po-strings[0m
-:[K[K [KESCESC[KOO[KBB[K              Equivalent  to [1m-D[0m, but the output is in the GNU [4mgettext[24m [1mpo[0m (portable object)
-:[K[K [KESCESC[KOO[KBB[K              file format.
-:[K[K [KESCESC[KOO[KBB[K       [1m--dump-strings[0m
-:[K[K [KESCESC[KOO[KBB[K              Equivalent to [1m-D[0m.
-:[K[K [KESCESC[KOO[KBB[K       [1m--help[0m Display a usage message on standard output and exit successfully.
-:[K[K [KESCESC[KOO[KBB[K       [1m--init-file[0m [4mfile[24m
-:[K[K [KESCESC[KOO[KBB[K       [1m--rcfile[0m [4mfile[24m
-:[K[K [KESCESC[KOO[KBB[K              Execute commands from [4mfile[24m instead of the standard  personal  initialization
-:[K[K [KESCESC[KOO[KBB[K              file [4m~/.bashrc[24m if the shell is interactive (see [1mINVOCATION[0m below).
-:[K[K [KESCESC[KOO[KBB[K
-:[K[K [KESCESC[KOO[KBB[K       [1m--login[0m
-:[K[K [KESCESC[KOO[KBB[K              Equivalent to [1m-l[0m.
-:[K[K [KESCESC[KOO[KBB[K
-:[K[K [KESCESC[KOO[KBB[K       [1m--noediting[0m
-:[K[K [KESCESC[KOO[KBB[K              Do  not use the GNU [1mreadline[0m library to read command lines when the shell is
-:[K[K [KESCESC[KOO[KBB[K              interactive.
-:[K[K [KESCESC[KOO[KBB[K
-:[K[K [KESCESC[KOO[KBB[K       [1m--noprofile[0m
-:[K[K [KESCESC[KOO[KBB[K              Do not read either the system-wide startup file [4m/etc/profile[24m or any  of  the
-:[K[K [KESCESC[KOO[KBB[K              personal initialization files [4m~/.bash_profile[24m, [4m~/.bash_login[24m, or [4m~/.profile[24m.
-:[K[K [KESCESC[KOO[KBB[K              By default, [1mbash[0m reads these files when it is invoked as a login shell  (see
-:[K[K [KESCESC[KOO[KBB[K              [1mINVOCATION[0m below).
-:[K[K [KESCESC[KOO[KBB[K
-:[K[K [KESCESC[KOO[KBB[K       [1m--norc[0m Do  not  read  and execute the personal initialization file [4m~/.bashrc[24m if the
-:[K[K [KESCESC[KOO[KBB[K              shell is interactive.  This option is on by default if the shell is  invoked
-:[K[K [KESCESC[KOO[KBB[K              as [1msh[0m.
-:[K[K [KESCESC[KOO[KBB[K
-:[K[K [KESCESC[KOO[KBB[K       [1m--posix[0m
-:[K[K [KESCESC[KOO[KBB[K              Change  the  behavior  of  [1mbash[0m where the default operation differs from the
-:[K[K [KESCESC[KOO[KBB[K              POSIX standard to match the standard ([4mposix[24m [4mmode[24m).
-:[K[K [KESCESC[KOO[KBB[K
-:[K[K [KESCESC[KOO[KBB[K       [1m--restricted[0m
-:[K[K [KESCESC[KOO[KBB[K              The shell becomes restricted (see [1mRESTRICTED[0m [1mSHELL[0m below).
-:[K[K [KESCESC[KOO[KBB[K
-:[K[K [KESCESC[KOO[KBB[K       [1m--rpm-requires[0m
-:[K[K [KESCESC[KOO[KBB[K              Produce the list of files that are required for the  shell  script  to  run.
-:[K[K [KESCESC[KOO[KBB[K              This  implies  ’-n’  and  is subject to the same limitations as compile time
-:[K[K [KESCESC[KOO[KBB[K              error checking checking; Backticks, [] tests,  and evals are not  parsed  so
-:[K[K [KESCESC[KOO[KBB[K              some dependencies may be missed.
-:[K[K [KESCESC[KOO[KBB[K
-:[K[K [KESCESC[KOO[KBB[K       [1m--verbose[0m
-:[K[K [KESCESC[KOO[KBB[K              Equivalent to  [1m-v[0m.
-:[K[K [KESCESC[KOO[KBB[K
-:[K[K [KESCESC[KOO[KBB[K       [1m--version[0m
-:[K[K [KESCESC[KOO[KBB[K              Show  version  information  for this instance of [1mbash[0m on the standard output
-:[K[K [KESCESC[KOO[KBB[K              and exit successfully.
-:[K[K [KESCESC[KOO[KBB[K
-:[K[K [KESCESC[KOO[KBB[K[1mARGUMENTS[0m
-:[K[K [KESCESC[KOO[KBB[K       If arguments remain after option processing, and neither the [1m-c[0m nor the  [1m-s[0m  option
-:[K[K [KESCESC[KOO[KBB[K       has  been supplied, the first argument is assumed to be the name of a file contain-
-:[K[K [KESCESC[KOO[KBB[K       ing shell commands.  If [1mbash[0m is invoked in this fashion, [1m$0[0m is set to the  name  of
-:[K[K [KESCESC[KOO[KBB[K       the  file,  and the positional parameters are set to the remaining arguments.  [1mBash[0m
-:[K[K [KESCESC[KOO[KBB[K       reads and executes commands from this file, then exits.  [1mBash[0m’s exit status is  the
-:[K[K [KESCESC[KOO[KBB[K       exit  status  of  the last command executed in the script.  If no commands are exe-
-:[K[K [KESCESC[KOO[KBB[K       cuted, the exit status is 0.  An attempt is first made to open the file in the cur-
-:[K[K [KESCESC[KOO[KBB[K       rent  directory,  and, if no file is found, then the shell searches the directories
-:[K[K [KESCESC[KOO[KBB[K       in [1mPATH[0m for the script.
-:[K[K [KESCESC[KOO[KBB[K
-:[K[K [KESCESC[KOO[KBB[K[1mINVOCATION[0m
-:[K[K [KESCESC[KOO[KBB[K       A [4mlogin[24m [4mshell[24m is one whose first character of argument zero is a [1m-[0m, or one  started
-:[K[K [KESCESC[KOO[KBB[K       with the [1m--login[0m option.
-:[K[K [KESCESC[KOO[KBB[K
-:[K[K [KESCESC[KOO[KBB[K       An [4minteractive[24m shell is one started without non-option arguments and without the [1m-c[0m
-:[K[K [KESCESC[KOO[KBB[K       option whose standard input and error are both connected to  terminals  (as  deter-
-:[K[K [KESCESC[KOO[KBB[K       mined by [4misatty[24m(3)), or one started with the us  of  the last command executed in the script.  If no commands are exe-
-:[K[K [KESCESC[KOO[KBB[K       cuted, the exit status is 0.  An attempt is first made to open the file in the cur-
-:[K[K [KESCESC[KOO[KBB[K       rent  directory,  and, if no file is found, then the shell searches the directories
-:[K[K [KESCESC[KOO[KBB[K       in [1mPATH[0m for the script.
-:[K[K [KESCESC[KOO[KBB[K
-:[K[K [KESCESC[KOO[KBB[K[1mINVOCATION[0m
-:[K[K [KESCESC[KOO[KBB[K       A [4mlogin[24m [4mshell[24m is one whose first character of argument zero is a [1m-[0m, or one  started
-:[K[K [KESCESC[KOO[KBB[K       with the [1m--login[0m option.
-:[K[K [KESCESC[KOO[KBB[K
-:[K[K [KESCESC[KOO[KBB[K       An [4minteractive[24m shell is one started without non-option arguments and without the [1m-c[0m
-:[K[K [KESCESC[KOO[KBB[K       option whose standard input and error are both connected to  terminals  (as  deter-
-:[K[K [KESCESC[KOO[KBB[K       mined by [4misatty[24m(3)), or one started with the [1m-i[0m option.  [1mPS1[0m is set and [1m$-[0m includes
-:[K[K [KESCESC[KOO[KBB[K       [1mi[0m if [1mbash[0m is interactive, allowing a shell script or a startup file  to  test  this
-:[K[K [KESCESC[KOO[KBB[K       state.
-:[K[K [KESCESC[KOO[KBB[K
-:[K[K [KESCESC[KOO[KBB[K       The  following  paragraphs describe how [1mbash[0m executes its startup files.  If any of
-:[K[K [KESCESC[KOO[KBB[K       the files exist but cannot be read, [1mbash[0m reports an error.  Tildes are expanded  in
-:[K[K [KESCESC[KOO[KBB[K       file names as described below under [1mTilde[0m [1mExpansion[0m in the [1mEXPANSION[0m section.
-:[K[K [KESCESC[KOO[KBB[K
-:[K[K[?1l>[?1049l]0;pcampbell@sonic:~/ScriptsSamples241/01-specialvars-cli-args[pcampbell@sonic 01-specialvars-cli-args]$ bash 0v[K[K-v scriptname.sh 
-module () {  eval `/usr/bin/modulecmd bash $*`
-}
-#!/bin/bash
-# pmcampbell
-# 20202-02-26
-#  using basename for script name & not using it
-
-echo "run this script using ./ then using bash command, then using absolute path"
-run this script using ./ then using bash command, then using absolute path
-
-echo script name using basename '$(basename $0)' $(basename $0)
-script name using basename $(basename $0) scriptname.sh
-echo script name \$0  $0
-script name $0 scriptname.sh
-]0;pcampbell@sonic:~/ScriptsSamples241/01-specialvars-cli-args[pcampbell@sonic 01-specialvars-cli-args]$ bash -v scriptname.sh [C[C[1@x
-module () {  eval `/usr/bin/modulecmd bash $*`
-}
-#!/bin/bash
-# pmcampbell
-# 20202-02-26
-#  using basename for script name & not using it
-
-echo "run this script using ./ then using bash command, then using absolute path"
-+ echo 'run this script using ./ then using bash command, then using absolute path'
-run this script using ./ then using bash command, then using absolute path
-
-echo script name using basename '$(basename $0)' $(basename $0)
-++ basename scriptname.sh
-+ echo script name using basename '$(basename $0)' scriptname.sh
-script name using basename $(basename $0) scriptname.sh
-echo script name \$0  $0
-+ echo script name '$0' scriptname.sh
-script name $0 scriptname.sh
-]0;pcampbell@sonic:~/ScriptsSamples241/01-specialvars-cli-args[pcampbell@sonic 01-specialvars-cli-args]$ bash -vx scriptname.sh [C[1@t
-module () {  eval `/usr/bin/modulecmd bash $*`
-}
-]0;pcampbell@sonic:~/ScriptsSamples241/01-specialvars-cli-args[pcampbell@sonic 01-specialvars-cli-args]$ cat scriptname.sh 
-#!/bin/bash
-# pmcampbell
-# 20202-02-26
-#  using basename for script name & not using it
-
-echo "run this script using ./ then using bash command, then using absolute path"
-
-echo script name using basename '$(basename $0)' $(basename $0)
-echo script name \$0  $0
-]0;pcampbell@sonic:~/ScriptsSamples241/01-specialvars-cli-args[pcampbel
