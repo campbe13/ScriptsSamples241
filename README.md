@@ -1,4 +1,9 @@
-## Sample bash scripts for 420-241-DW OS I Linux 2016 & 2017
+## Sample bash scripts for 420-241-DW OS I Linux 2016 & 2017  & 2019
+
+### Quick reference for writing bash scripts 
+Special variables, integer & string operators,  file test operators ...
+
+[Click to see the Scripting Quick Reference](https://docs.google.com/document/d/1P6YXqTiwriZahY9JoayhfhpsmbCXPA517pua0aKl1SY/edit?usp=sharing)
 
 ### Poll Vote please help me improve the content:
 * Code useful or not:  http://goo.gl/lQDitM
