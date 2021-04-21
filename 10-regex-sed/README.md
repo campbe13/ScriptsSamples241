@@ -1,6 +1,6 @@
 # Using Regex with sed
 
-* Overview http://wiki.pcampbell.ep.profweb.qc.ca/index.php/Sed
+* Overview https://wiki-pcampbell.profweb.ca/index.php?title=Sed
 * Tutorial http://www.grymoire.com/Unix/Sed.html
 * http://tldp.org/LDP/Bash-Beginners-Guide/html/chap_05.html
 * http://www.maketecheasier.com/beginners-guide-to-sed-linux/
